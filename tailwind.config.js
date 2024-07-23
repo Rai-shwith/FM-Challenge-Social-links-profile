@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./index.html", "./script.js"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        buttonGreen: {
+          hsl: 'hsl(75, 94%, 57%)',
+        },
+      },
+    },
   },
   plugins: [],
 }

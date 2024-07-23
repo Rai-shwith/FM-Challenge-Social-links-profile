@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href="./output.css" rel="stylesheet">
-  
+
   <title>Frontend Mentor | Social links profile</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
+<body class="h-screen w-screen bg-gray-900 flex flex-col justify-center items-center">
+  <main class="rounded-md flex justify-center items-center flex-col text-center p-3 bg-gray-800">
+    <div class="overflow-hidden rounded-full transform scale-75">
+      <img class="object-cover " src="assets/images/avatar-jessica.jpeg" alt="">
+    </div>
+    <h1 class="text-3xl font-bold mt-2 "> Jessica Randall</h1>
+    <h2 class="text-lg text-buttonGreen-hsl font-semibold mb-2">London, United Kingdom</h2>
+    <h3>"Front-end developer and avid reader."</h3>
+    <div class="flex flex-col gap-3 items-stretch w-full ">
+      <button class="bg-gray-700 p-1 cursor-pointer hover:bg-buttonGreen-hsl rounded-md">GitHub</button>
+      <button class="bg-gray-700 p-1 cursor-pointer hover:bg-buttonGreen-hsl rounded-md">Frontend Mentor</button>
+      <button class="bg-gray-700 p-1 cursor-pointer hover:bg-buttonGreen-hsl rounded-md">LinkedIn</button>
+      <button class="bg-gray-700 p-1 cursor-pointer hover:bg-buttonGreen-hsl rounded-md">Twitter</button>
+      <button class="bg-gray-700 p-1 cursor-pointer hover:bg-buttonGreen-hsl rounded-md">Instagram</button>
+    </div>
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
